@@ -1,0 +1,10 @@
+server:
+    port: 443
+    ssl:
+        key-store: classpath:server.jks
+        enabled: true
+        key-store-password: 123456
+        keyStoreType: JKS
+        keyAlias: www.xinfengtech.com
+    
+    
