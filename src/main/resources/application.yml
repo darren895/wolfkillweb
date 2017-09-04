@@ -6,5 +6,30 @@ server:
         key-store-password: 123456
         keyStoreType: JKS
         keyAlias: www.xinfengtech.com
-    
-    
+spring:
+    datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://localhost:3306/wolfkill
+      username: root
+      password: zhj2134978560
+      driverClassName: com.mysql.jdbc.Driver
+      #初始化大小
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 60000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+    jpa:
+      database: mysql
+      show-sql: false
+      generate-ddl: true
+      hibernate:
+        ddl-auto: update
+        naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+
