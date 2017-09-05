@@ -45,4 +45,8 @@ public class RoomService {
 		BeanUtils.copyProperties(room, roomDto);
 		return roomDto;
 	}
+	
+	public void joinRoom(int id, String openid){
+		
+	}
 }
