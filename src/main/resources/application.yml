@@ -32,4 +32,8 @@ spring:
         ddl-auto: update
         naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
       database-platform: org.hibernate.dialect.MySQL5Dialect
+weixin:
+    app:
+      appid: wx5c074f9c49394059
+      secret: 98e3801d3fb24f3ce650ac8ce7f2e8c8
 
