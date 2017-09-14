@@ -32,8 +32,22 @@ spring:
         ddl-auto: update
         naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
       database-platform: org.hibernate.dialect.MySQL5Dialect
+    freemarker:
+        allow-request-override: false
+        cache: true
+        check-template-location: true
+        charset: UTF-8
+        content-type: text/html
+        expose-request-attributes: false
+        expose-session-attributes: false
+        expose-spring-macro-helpers: false
+        #prefix: 
+        #request-context-attribute: 
+        #settings.*: 
+        suffix: .ftl
+        template-loader-path: classpath:/templates/
 weixin:
     app:
       appid: wx5c074f9c49394059
       secret: 98e3801d3fb24f3ce650ac8ce7f2e8c8
-
+    
